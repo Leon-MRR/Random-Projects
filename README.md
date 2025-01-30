@@ -27,7 +27,7 @@ pip install pygame
 Clone the repository and execute the main script:
 
 ```sh
-git clone https://github.com/your-repo/game-of-life-pygame.git
+git clone https://github.com/Leon-MRR/Random-Projects.git
 cd game-of-life-pygame
 python main.py
 ```
