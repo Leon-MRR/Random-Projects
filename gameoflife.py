@@ -65,8 +65,11 @@ def main():
 
     while True:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
+            if event.type == pygame.QUIT :
                 pygame.quit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_q:
+                    pygame.quit()
                 return
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
@@ -83,7 +86,12 @@ def main():
                     cells[position[0] // n, position[1] // n] = 0
                     update(screen, cells, n)
                     pygame.display.update()
-            
+            elif pygame.type == pygame.KEYDOWN:
+                if event.key == pygame.K_z:
+                    update(screen, cells=0, n)
+                    running = not running
+                    pygame.display.update()
+                    
 
         screen.fill(color_grid)
 
