@@ -7,6 +7,7 @@ This project is a **Pygame-based simulation** of Conway's Game of Life, a famous
 - **Interactive Grid**: Click to add or remove cells before starting the simulation.
 - **Grid Resizing**: Modify the grid size dynamically.
 - **Pause & Resume**: Start and stop the simulation at any time.
+- **Random Generation**: Generate a random starting grid.
 
 ## Rules of the Game
 Each cell in the grid follows these rules:
@@ -28,14 +29,16 @@ Clone the repository and execute the main script:
 
 ```sh
 git clone https://github.com/Leon-MRR/Random-Projects.git
-cd game-of-life-pygame
+cd Random-Projects
 python main.py
 ```
 
 ## Controls
-- **Left Click**: Toggle cell state (alive/dead).
-- **Right Click**: Toggle cell state (alive/dead)
+- **Left Click**: Activate cell state (alive).
+- **Right Click**: Toggle cell state (dead).
 - **Spacebar**: Start/Pause the simulation.
+- **Z key**: Reset the grid. 
+- **G-key**: Generate random grid.
 
 ## Future Improvements
 - **Preset Patterns**: Load common patterns like **gliders**, **oscillators**, and **spaceships**.
