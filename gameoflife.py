@@ -67,13 +67,20 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT :
                 pygame.quit()
-            elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_q:
-                    pygame.quit()
                 return
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
                     running = not running  
+                    update(screen, cells, n)
+                    pygame.display.update()
+                elif event.key == pygame.K_g:
+                    for o,p in np.ndindex(cells.shape):
+                        cells[o,p] = np.random.randint(0,2)
+                    update(screen, cells, n)
+                    pygame.display.update()
+                elif event.key == pygame.K_z:
+                    for l,m in np.ndindex(cells.shape):
+                            cells[l,m] = 0
                     update(screen, cells, n)
                     pygame.display.update()
             if pygame.mouse.get_pressed()[0]:
@@ -86,11 +93,8 @@ def main():
                     cells[position[0] // n, position[1] // n] = 0
                     update(screen, cells, n)
                     pygame.display.update()
-            elif pygame.type == pygame.KEYDOWN:
-                if event.key == pygame.K_z:
-                    update(screen, cells=0, n)
-                    running = not running
-                    pygame.display.update()
+            
+            
                     
 
         screen.fill(color_grid)
