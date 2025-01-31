@@ -38,7 +38,7 @@ python main.py
 - **Right Click**: Toggle cell state (dead).
 - **Spacebar**: Start/Pause the simulation.
 - **Z key**: Reset the grid. 
-- **G-key**: Generate random grid.
+- **G key**: Generate random grid.
 
 ## Future Improvements
 - **Preset Patterns**: Load common patterns like **gliders**, **oscillators**, and **spaceships**.
