@@ -76,6 +76,7 @@ def main():
                 elif event.key == pygame.K_g:
                     for o,p in np.ndindex(cells.shape):
                         cells[o,p] = np.random.choice([0,1],p=[0.75,0.25])
+                    running = False
                     update(screen, cells, n)
                     pygame.display.update()
                 elif event.key == pygame.K_z:
