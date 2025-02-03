@@ -47,6 +47,4 @@ git clone https://github.com/Leon-MRR/Random-Projects.git
 ## License
 This project is licensed under the MIT License. Feel free to modify and contribute.
 
-## Acknowledgments
-Inspired by **John Conway's** original Game of Life and various Pygame implementations.
 
