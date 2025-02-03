@@ -25,12 +25,10 @@ pip install pygame
 ```
 
 ### Running the Project
-Clone the repository and execute the main script:
+Clone the repository:
 
 ```sh
 git clone https://github.com/Leon-MRR/Random-Projects.git
-cd Random-Projects
-python main.py
 ```
 
 ## Controls
